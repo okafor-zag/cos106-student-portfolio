@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Student Academic Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand">MIVA<span>Portfolio</span></a>
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+      <nav aria-label="Main Navigation">
+        <ul id="navLinks" class="nav-links">
+          <li><a href="index.html" class="">Home</a></li>
+          <li><a href="about.html" class="active">About Me</a></li>
+          <li><a href="projects.html" class="">Projects</a></li>
+          <li><a href="planner.html" class="">Academic Planner</a></li>
+          <li><a href="contact.html" class="">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1 class="section-title">About Me</h1>
+      <p class="section-subtitle">Educational background, career goals, skills, and personal interests.</p>
+
+      <div class="grid-2">
+        <article class="card">
+          <h3>Educational Background</h3>
+          <p>
+            I am enrolled in the B.Sc. Computer Science programme at <strong>MIVA Open University</strong>,
+            where I have built strong foundations in computing, mathematics, and web development.
+          </p>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Institution / Level</th>
+                  <th>Programme / Focus</th>
+                  <th>Year</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>MIVA Open University</td>
+                  <td>B.Sc. Computer Science (100 Level)</td>
+                  <td>2025 &ndash; Present</td>
+                </tr>
+                <tr>
+                  <td>Federal Government College</td>
+                  <td>Senior Secondary Certificate (WASSCE)</td>
+                  <td>2019 &ndash; 2025</td>
+                </tr>
+                <tr>
+                  <td>MIVA Digital Skills Bootcamp</td>
+                  <td>Frontend Web Fundamentals</td>
+                  <td>2026</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Career Aspirations</h3>
+          <p>
+            My goal is to become a full-stack software engineer specializing in educational technology
+            and scalable cloud applications that expand digital access across Africa.
+          </p>
+          <h3 style="margin-top: 1.25rem;">Audio Introduction</h3>
+          <div class="media-box">
+            <p><strong>Listen to my portfolio welcome chime &amp; intro clip:</strong></p>
+            <audio controls>
+              <source src="assets/welcome-intro.wav" type="audio/wav" />
+              Your browser does not support the HTML5 audio element.
+            </audio>
+          </div>
+        </article>
+      </div>
+
+      <div class="grid-2" style="margin-top: 1.75rem;">
+        <article class="card">
+          <h3>Technical Skills</h3>
+          <ul>
+            <li><strong>Frontend Development:</strong> Semantic HTML5, CSS3, Flexbox, CSS Grid, Responsive Design</li>
+            <li><strong>Programming &amp; Scripting:</strong> JavaScript (ES6+), DOM Manipulation, Python</li>
+            <li><strong>Developer Tools:</strong> Git, GitHub, VS Code, Chrome DevTools</li>
+            <li><strong>UI/UX &amp; Accessibility:</strong> WCAG Color Contrast, Mobile-First Wireframing</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Hobbies &amp; Interests</h3>
+          <ol>
+            <li>Participating in university hackathons and open-source coding challenges</li>
+            <li>Playing strategic chess and solving algorithmic brainteasers</li>
+            <li>Writing beginner-friendly technical tutorials for fellow students</li>
+            <li>Football, podcast listening, and UI design exploration</li>
+          </ol>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="currentYear">2026</span> Chinedu Okafor &bull; B.Sc. Computer Science, MIVA Open University (COS 106 Term Project)</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

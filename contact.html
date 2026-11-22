@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Student Academic Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand">MIVA<span>Portfolio</span></a>
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+      <nav aria-label="Main Navigation">
+        <ul id="navLinks" class="nav-links">
+          <li><a href="index.html" class="">Home</a></li>
+          <li><a href="about.html" class="">About Me</a></li>
+          <li><a href="projects.html" class="">Projects</a></li>
+          <li><a href="planner.html" class="">Academic Planner</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1 class="section-title">Contact Me</h1>
+      <p class="section-subtitle">Have a question about my projects or academic collaboration? Send a message below.</p>
+
+      <div class="grid-2">
+        <div class="card">
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" />
+              <span id="nameError" class="error-text"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="emailAddress">Email Address *</label>
+              <input type="email" id="emailAddress" name="emailAddress" placeholder="e.g., student@miva.edu.ng" />
+              <span id="emailError" class="error-text"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="phoneNumber">Phone Number (Digits Only) *</label>
+              <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="e.g., 08012345678" />
+              <span id="phoneError" class="error-text"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="messageBox">Message *</label>
+              <textarea id="messageBox" name="messageBox" rows="4" placeholder="Write your message here..."></textarea>
+              <span id="messageError" class="error-text"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <div id="formFeedback" class="form-feedback" role="status"></div>
+          </form>
+        </div>
+
+        <aside class="card">
+          <h3>Student Contact Details</h3>
+          <p style="margin-bottom: 1rem;">
+            Feel free to reach out for study groups, software engineering internships, or web development feedback.
+          </p>
+          <ul>
+            <li><strong>Institution:</strong> MIVA Open University</li>
+            <li><strong>Department:</strong> Computer Science</li>
+            <li><strong>Email:</strong> chinedu.okafor@student.miva.edu.ng</li>
+            <li><strong>GitHub:</strong> <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com/chinedu-cos106</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="currentYear">2026</span> Chinedu Okafor &bull; B.Sc. Computer Science, MIVA Open University (COS 106 Term Project)</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

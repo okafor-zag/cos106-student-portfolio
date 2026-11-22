@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Student Academic Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand">MIVA<span>Portfolio</span></a>
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+      <nav aria-label="Main Navigation">
+        <ul id="navLinks" class="nav-links">
+          <li><a href="index.html" class="">Home</a></li>
+          <li><a href="about.html" class="">About Me</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="planner.html" class="">Academic Planner</a></li>
+          <li><a href="contact.html" class="">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1 class="section-title">Academic &amp; Technical Projects</h1>
+      <p class="section-subtitle">Selected web development projects built using HTML, CSS, and JavaScript.</p>
+
+      <div class="filter-bar" role="group" aria-label="Filter projects by category">
+        <button type="button" class="filter-btn active" data-filter="all">All Projects</button>
+        <button type="button" class="filter-btn" data-filter="web">Web Applications</button>
+        <button type="button" class="filter-btn" data-filter="javascript">JavaScript Tools</button>
+      </div>
+
+      <div class="grid-3">
+        <article class="card project-card" data-category="javascript">
+          <img src="assets/project1.png" alt="Screenshot of MIVA GPA and CGPA Calculator" />
+          <div class="project-body">
+            <h3>1. MIVA GPA &amp; CGPA Calculator</h3>
+            <p>
+              An interactive semester grade calculator that computes weighted grade points across
+              registered courses using JavaScript arrays and dynamic DOM updates.
+            </p>
+            <div class="project-links">
+              <a href="planner.html" class="btn btn-primary">Live Demo</a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub Repo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card" data-category="web">
+          <img src="assets/project2.png" alt="Screenshot of Campus Event and Study Hub" />
+          <div class="project-body">
+            <h3>2. Campus Event &amp; Study Hub</h3>
+            <p>
+              A mobile-friendly student portal showcasing webinar schedules, study group rooms,
+              and academic announcements built with CSS Grid and Flexbox.
+            </p>
+            <div class="project-links">
+              <a href="about.html" class="btn btn-primary">Live Demo</a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub Repo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card" data-category="javascript">
+          <img src="assets/project3.png" alt="Screenshot of Personal Expense and Budget Tracker" />
+          <div class="project-body">
+            <h3>3. Student Expense &amp; Budget Tracker</h3>
+            <p>
+              A client-side financial tracker allowing undergraduates to log allowances, categorize
+              weekly expenses, and monitor remaining balances in real time.
+            </p>
+            <div class="project-links">
+              <a href="contact.html" class="btn btn-primary">Live Demo</a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub Repo</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="currentYear">2026</span> Chinedu Okafor &bull; B.Sc. Computer Science, MIVA Open University (COS 106 Term Project)</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

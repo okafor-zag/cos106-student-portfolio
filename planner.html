@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academic Planner | Student Academic Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand">MIVA<span>Portfolio</span></a>
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+      <nav aria-label="Main Navigation">
+        <ul id="navLinks" class="nav-links">
+          <li><a href="index.html" class="">Home</a></li>
+          <li><a href="about.html" class="">About Me</a></li>
+          <li><a href="projects.html" class="">Projects</a></li>
+          <li><a href="planner.html" class="active">Academic Planner</a></li>
+          <li><a href="contact.html" class="">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1 class="section-title">Interactive Academic Planner</h1>
+      <p class="section-subtitle">Add coursework tasks, mark assignments as completed, or delete finished items.</p>
+
+      <div class="planner-stats">
+        <div class="stat-box">
+          <span id="totalTasks">0</span>
+          Total Tasks
+        </div>
+        <div class="stat-box">
+          <span id="completedTasks">0</span>
+          Completed
+        </div>
+        <div class="stat-box">
+          <span id="pendingTasks">0</span>
+          Pending
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom: 1.75rem;">
+        <form id="taskForm" class="planner-form">
+          <div>
+            <label for="taskTitle" style="font-weight:600; display:block; margin-bottom:0.3rem;">Task Description</label>
+            <input type="text" id="taskTitle" placeholder="e.g., Submit COS 106 Lab Report" required />
+          </div>
+          <div>
+            <label for="taskCourse" style="font-weight:600; display:block; margin-bottom:0.3rem;">Course Code</label>
+            <input type="text" id="taskCourse" placeholder="e.g., COS 106" />
+          </div>
+          <div>
+            <label for="taskDate" style="font-weight:600; display:block; margin-bottom:0.3rem;">Due Date</label>
+            <input type="date" id="taskDate" />
+          </div>
+          <div style="display:flex; align-items:flex-end;">
+            <button type="submit" class="btn btn-primary" style="width:100%;">+ Add Task</button>
+          </div>
+        </form>
+      </div>
+
+      <ul id="taskList" class="task-list" aria-live="polite"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="currentYear">2026</span> Chinedu Okafor &bull; B.Sc. Computer Science, MIVA Open University (COS 106 Term Project)</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
